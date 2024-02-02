@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'ScaryThin';
+    src: url('/CSS/Scarythin\ St.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    color: rgb(185, 185, 185);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: black;
+    font-family: 'ScaryThin', Georgia, 'Times New Roman', Times, serif;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+#myVideo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+table {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1vw;
+    margin: 1vw;
+}
+
+th {
+    padding: 5px;
+    }
+
+    img#logo {
+        width: 1.5%;
+        margin: 0.99vw;
+    }
+
+@media only screen and (max-width: 600px) {
+    table#fev24 {
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    img#logo {
+        width: 10%;
+    }
+}
